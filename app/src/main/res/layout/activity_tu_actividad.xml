@@ -1,0 +1,268 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:onClick="muestraCalendario"
+    tools:context=".TuActividad">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/titulo1"/>
+    </LinearLayout>
+
+    <!-- Título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewTuActividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tu actividad"
+            android:textColor="#ABCE00"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Sección de Plantas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sección Frijoles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageViewIconoFrijoles"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:src="@drawable/iconoplanta"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewNombreFrijoles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frijoles"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/buttonAdicionFrijoles"
+                    android:layout_width="160dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#648C01"
+                    android:text="Adición Abono"
+                    android:textColor="#ffffff"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editTextDateFrijoles"
+                        android:layout_width="193dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:hint="Seleccione la fecha"
+                        android:inputType="date"
+                        android:textSize="14sp"/>
+                    <ImageButton
+                        android:id="@+id/imageButtonCalendarioFrijoles"
+                        android:layout_width="46dp"
+                        android:layout_height="41dp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"
+                        android:onClick="muestraCalendario"
+                        app:srcCompat="@drawable/iconocalendario"
+                        android:contentDescription="Abrir calendario para Frijoles"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewProximaFechaFrijoles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Próxima fecha es: "/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sección Lechuga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageViewIconoLechuga"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:src="@drawable/iconogotaagua"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewNombreLechuga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lechuga"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/buttonUltimoRiegoLechuga"
+                    android:layout_width="160dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#648C01"
+                    android:text="Último riego"
+                    android:textColor="#ffffff"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editTextDateLechuga"
+                        android:layout_width="193dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:hint="Seleccione la fecha"
+                        android:inputType="date"
+                        android:textSize="14sp"/>
+                    <ImageButton
+                        android:id="@+id/imageButtonCalendarioLechuga"
+                        android:layout_width="46dp"
+                        android:layout_height="41dp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"
+                        android:onClick="muestraCalendario"
+                        app:srcCompat="@drawable/iconocalendario"
+                        android:contentDescription="Abrir calendario para Lechuga"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewProximaFechaLechuga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Próxima fecha es: "/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sección Tomate -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/imageViewIconoTomate"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:src="@drawable/iconoenergiaelectrica"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewNombreTomate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomate"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/buttonAccionTomate"
+                    android:layout_width="160dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#648C01"
+                    android:text="Último uso de energía"
+                    android:textColor="#ffffff"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editTextDateTomate"
+                        android:layout_width="193dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:hint="Seleccione la fecha"
+                        android:inputType="date"
+                        android:textSize="14sp"/>
+                    <ImageButton
+                        android:id="@+id/imageButtonCalendarioTomate"
+                        android:layout_width="46dp"
+                        android:layout_height="41dp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"
+                        android:onClick="muestraCalendario"
+                        app:srcCompat="@drawable/iconocalendario"
+                        android:contentDescription="Abrir calendario para Tomate"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewProximaFechaTomate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Próxima fecha es: "/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Navegación -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop">
+        <ImageView
+            android:id="@+id/imageViewAtras10"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/botonatras"/>
+        <ImageView
+            android:id="@+id/imageViewCasita10"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/botoncasita"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewfootertodos"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:foregroundGravity="fill_horizontal|clip_horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/footertodos"/>
+</LinearLayout>
