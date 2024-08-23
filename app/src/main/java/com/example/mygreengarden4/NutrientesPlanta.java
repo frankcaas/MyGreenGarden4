@@ -25,7 +25,7 @@ public class NutrientesPlanta extends AppCompatActivity {
         principalCasita = findViewById(R.id.imageViewCasita4);
         nutrientesagua = findViewById(R.id.buttonAccionAgua);
         nutrientesenergiaelectrica = findViewById(R.id.buttonAccionEnergiaElectrica);
-        nutrientesabono = findViewById(R.id.buttonAccionAbono);
+        nutrientesabono = findViewById(R.id.buttonCT);
 
         // Manejar el clic del botón "Agua"
         nutrientesagua.setOnClickListener(new View.OnClickListener() {

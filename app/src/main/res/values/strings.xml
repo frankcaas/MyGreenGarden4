@@ -1,4 +1,5 @@
 <resources>
+    <!-- Nombre de la aplicación -->
     <string name="app_name">MyGreenGarden</string>
 
     <!-- Arreglo de strings para los meses del año -->
@@ -16,4 +17,14 @@
         <item>noviembre</item>
         <item>diciembre</item>
     </string-array>
+
+    <!-- Botones de acción -->
+    <string name="buttonAccionAgua">Agua</string>
+    <string name="buttonAccionEnergiaElectrica">Electricidad</string>
+    <string name="buttonAccionAbono">Abono</string>
+
+    <!-- Botones de consejos por cultivo -->
+    <string name="buttonCF">ConsejosFrijoles</string>
+    <string name="buttonCL">ConsejosLechuga</string>
+    <string name="buttonCT">ConsejosTomate</string>
 </resources>

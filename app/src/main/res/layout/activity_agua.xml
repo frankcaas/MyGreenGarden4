@@ -71,7 +71,7 @@
         android:text="Consumo del mes (m3)" />
 
     <EditText
-        android:id="@+id/editTextConsumoMesM3"
+        android:id="@+id/editTextConsumoMesKW"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:ems="10"

@@ -70,9 +70,9 @@ public class TuActividad extends AppCompatActivity implements View.OnClickListen
         imageButtonCalendarioTomate.setOnClickListener(this);
 
         // Escuchadores de botones de adición
-        buttonAdicionFrijoles.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaFrijoles, 8));
-        buttonAdicionLechuga.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaLechuga, 10));
-        buttonAdicionTomate.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaTomate, 12));
+        buttonAdicionFrijoles.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaFrijoles, 9)); // Cada 7-10 días
+        buttonAdicionLechuga.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaLechuga, 3)); // Cada 3-4 días
+        buttonAdicionTomate.setOnClickListener(v -> setFechaAdicion(dia, mes, ano, textViewProximaFechaTomate, 6)); // Cada 5-7 días
 
         // Escuchador del botón "Atras"
         imageViewAtras.setOnClickListener(v -> {

@@ -44,7 +44,7 @@ public class Agua extends AppCompatActivity {
             return insets;
         });
 
-        editTextConsumoMes = findViewById(R.id.editTextConsumoMesM3);
+        editTextConsumoMes = findViewById(R.id.editTextConsumoMesKW);
         editTextPrecioM3 = findViewById(R.id.editTextTiempoHoras);
         spinnerMes = findViewById(R.id.SpinnerMes);
         buttonCalcularValor = findViewById(R.id.buttonCalcularValor);
